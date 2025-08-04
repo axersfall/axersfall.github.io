@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name - Resume</title>
+  <title>Axers Fall - Resume</title>
   <style>
     /* Make sure html and body take up the full screen */
 html, body {
@@ -24,16 +24,16 @@ html, body {
   object-fit: contain;
   background-color: black;
   z-index: -2;
+  filter: blur(6px) brightness(0.7); /* brightness reduces glare */
 }
 
 /* Optional dark overlay for readability */
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  background: rgba(0, 0, 0, 0.5);  /* adjust 0.5 for darkness */
   z-index: -1;
 }
 
