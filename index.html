@@ -39,11 +39,14 @@ html, body {
 
 /* Resume content stays above video */
 .content {
-  background: rgba(0, 0, 0, 0.6); /* translucent black box */
-  padding: 40px;
-  border-radius: 8px;
-  color: #f8f8f8; /* soft light color for readability */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 20px;
+  color: #f8f8f8;
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
     
     body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 40px; line-height: 1.6; }
