@@ -5,6 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Your Name - Resume</title>
   <style>
+    /* Make sure html and body take up the full screen */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  overflow: hidden; /* Optional: prevents scroll if no need */
+}
+
+/* Fullscreen video background */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Optional dark overlay for readability */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  z-index: -1;
+}
+
+/* Resume content stays above video */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 60px;
+  max-width: 800px;
+  margin: auto;
+  color: white; /* ensure readable over dark background */
+}
     body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 40px; line-height: 1.6; }
     h1, h2, h3 { color: #333; }
     h1 { margin-bottom: 5px; }
@@ -16,14 +56,16 @@
   </style>
 </head>
 <body>
-  <div class="resume-container">
-    <div class="video-wrapper">
-      <video autoplay muted loop playsinline>
-        <source src="background.mp4" type="video/mp4">
-      </video>
-    </div>
+  <!-- Fullscreen background video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="bg-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  <h1>Your Name</h1>
+  <!-- Optional overlay for readability -->
+  <div class="overlay"></div>
+  
+  <h1>Axers Fall</h1>
   <div class="contact">
     📍 Hebei, China &nbsp;|&nbsp;
     📧 <a href="mailto:trigga852@gmail.com">trigga852@gmail.com</a> &nbsp;|&nbsp;
@@ -49,7 +91,7 @@
     <h2>Experience</h2>
     <div class="job">
       <h3>I have no working experience...(so sorry about that) 
-        but I've been studying Max/MSP around 7 years,at least.</h3>
+        but I've been studying Max/MSP around 6 years,at least.</h3>
       
   <div class="section">
     <h2>Education</h2>
