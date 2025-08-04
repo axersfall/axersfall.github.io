@@ -57,6 +57,19 @@ html, body {
   text-decoration: underline;
   text-decoration-color: orange;
 }
+
+    .video-container {
+    max-width: 600px; /* Set a maximum width for responsiveness */
+    margin: 20px auto; /* Center the video and add some spacing */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.video-container iframe {
+    width: 100%; /* Make the iframe responsive to its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing below the iframe */
+}
     
     body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 40px; line-height: 1.6; }
     h1, h2, h3 { color: white; }
@@ -110,6 +123,10 @@ html, body {
     <h2>Education</h2>
     <div class="edu">
       <h3>almost all Max/MSP/Jitter things learned from myself. and from Youtube videos of course.</h3>
+
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://youtu.be/B8nA_S0vO5w?si=fad6FRYROeh_UrOx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
   <div class="section">
     <h2>Projects</h2>
