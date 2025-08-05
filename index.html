@@ -39,6 +39,9 @@ html, body {
   background: rgba(0, 0, 0, 0.5);  /* adjust 0.5 for darkness */
   z-index: -1;
 }
+.shadow-text {
+  text-shadow: 2px 2px 6px rgba(0.502, 0.0, 0.502, 0.6);
+}
 
 /* Resume content stays above video */
 .content {
@@ -105,7 +108,7 @@ html, body {
   <!-- Optional overlay for readability -->
   <div class="overlay"></div>
   
-  <h1>Axers Fall</h1>
+  <h1><p class="shadow-text">Axers Fall</p></h1>
   <div class="contact">
     📍 Hebei, China &nbsp;|&nbsp;
     📧 <a href="mailto:trigga852@gmail.com">trigga852@gmail.com</a> &nbsp;|&nbsp;
@@ -114,12 +117,12 @@ html, body {
   </div>
 
   <div class="section">
-    <h2>About Me</h2>
+    <h2><p class="shadow-text">About Me</p></h2>
     <p>A <span class="yellow-italic-text">amateur sound designer</span> that use <span class="green-text"><b>Max/MSP</b></span>. and know a little bit of <span class="green-text"><b>2D/3D visual programming with jitter</b></span>.</p>
   </div>
 
   <div class="section">
-    <h2>Skills</h2>
+    <h2><p class="shadow-text">Skills</p></h2>
     <ul>
       <li><span class="green-text"><b>Time domain sound design</b></span> : Max/MSP, <span class="yellow-italic-text">Gen~</span></li>
       <li><span class="green-text"><b>frequency domain sound design</b></span> : <span class="yellow-italic-text">pfft~ (spectral process)</span></li>
@@ -128,17 +131,17 @@ html, body {
   </div>
 
   <div class="section">
-    <h2>Experience</h2>
+    <h2><p class="shadow-text">Experience</p></h2>
     <div class="job">
       <h3>I have no working experience...(so sorry about that) 
         but I've been studying Max/MSP around 6 years,at least.</h3>
       
   <div class="section">
-    <h2>Education</h2>
+    <h2><p class="shadow-text">Education</p></h2>
     <div class="edu">
       <h3>almost all Max/MSP/Jitter things learned from myself. and from Youtube videos of course.</h3>
 
-  <section class="video-section">
+      <section class="video-section">
         <h2><span class="green-text">sound design with glitchbox sample in <span class="yellow-italic-text">gen~</span> video showcase</span></h2>
         <div class="video-container">
             <iframe width="560" height="500" src="https://www.youtube.com/embed/Pen694VGa6Q?si=trVSK_COrFyvD0rB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -146,7 +149,7 @@ html, body {
     </section>
 
   <div class="section">
-    <h2>Projects</h2>
+    <h2><p class="shadow-text">Projects</p></h2>
     <ul>
       <li><strong>spectral ease</strong>: A <span class="green-text"><b>spectral "waveshaper"</b></span> for <span class="yellow-italic-text">shaping tones</span>.</li>
       <a href="easy.maxpat"><p class="red-bold-orange-underline">Free to have a test!!!</p></a>
@@ -158,6 +161,10 @@ html, body {
       <li><strong>TideWater</strong>: A <span class="green-text"><b>spectral filter</b></span> M4L sound design plugin but with LFO movements.</li>
       <a href="https://ko-fi.com/s/8cfb91af3c"><p class="red-bold-blue-underline">Link : TideWater</p></a>
       <img src="TideWater.jpg" alt="My Photo" width="840" height="560">
+
+      
+
+      
     </ul>
   </div>
 
